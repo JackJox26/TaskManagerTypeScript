@@ -1,19 +1,3 @@
-# Back
-
-## La structure
-
-- src : code source
-
-- docs : la documentation de openapi3
-
-- test : avec postman ou automatisé
-
-- RESPONSE.md : ce sont mes choix
-
-## Structure du dossier src
-
-Le dossier src a été créé en pensant séparation des responsabilités
-
 openapi: 3.0.0
 # Added by API Auto Mocking Plugin
 servers:
@@ -199,16 +183,3 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Tag'
-
-
-- main.ts :c'est le point d'entrée de l'app
-- config.ts :ce sont les variable env de l'app
-- infrastructure : ce sont les dépendance externe de l'app
-- contexts : ce sont les contexts de l'app
-
-## Executer le projet
-1. exécuter la commande : npm install
-2. exécuter la commande : npm update
-3. exécuter la commande : npm run db:generate
-4. exécuter la commande : npm run db:migrate
-5. lancer le projet avec la commande : npm run serve
